@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :answers
+  resources :questions
+  resources :tests
+  resources :users
   # route to test your configuration
   get '/hello', to: 'application#hello_world'
 
